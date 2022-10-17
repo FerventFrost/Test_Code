@@ -23,6 +23,15 @@ i can't explain here what is the problem but if you don't know what lvalue is, p
 i played with the code and i noticed that you can access the next array data using pointer from another array assign to it. but with a catch
 you can use it when you declear the new arrya after the first one.
 
+*EDIT*:
+you must have the same data type of the 2 array or variable to get The expected value.
+if you use different data type some weird value. beacuse compiler will decode the value based on the pointer data type.Eg
+
+if pointer data tybe is int and the next value in the memory is float.
+pointer will decode only the part of it, bc int is smaller than float, and will ignore the rest of the float.
+Try to Change line  46 and see the result with    
+int newarr[3] = {0,1,2};
+
 
 **RUN THE CODE BELOW**
 */
